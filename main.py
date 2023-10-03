@@ -5,11 +5,7 @@ from lib.captcha import reCAPTCHA
 
 class SnapBrute:
     def ui(self):
-
-
         print(f"""{Fore.BLUE}
-        # ... (rest of your UI code)
-        # ... (rest of your UI code)
     \t\t\t  _________                   __________                __           
     \t\t\t /   _____/ ____ _____  ______\______   \_______ __ ___/  |_  ____   
     \t\t\t \_____  \ /    \\__  \ \____ \|    |  _/\_  __ \  |  \   __\/ __ \  

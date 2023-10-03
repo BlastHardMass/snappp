@@ -62,8 +62,9 @@ class SnapBrute:
                 elif 'phone='in req.text:
                     print(f'[{Fore.BLUE}!{Fore.RESET}] Secure account!')
 
-            except:
-                 print(f'[{Fore.RED}!{Fore.RESET}] An error occured!')
+        except Exception as e:
+                print(f'[{Fore.RED}!{Fore.RESET}] An error occurred: {str(e)}')
+
 
     def main(self):
         self.ui()

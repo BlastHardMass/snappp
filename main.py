@@ -5,10 +5,7 @@ from lib.captcha import reCAPTCHA
 
 class SnapBrute:
     def ui(self):
-        if platform.system() == "Windows":
-            os.system("cls")
-        else:
-            os.system("printf '\033c'")  # This command clears the screen in most Unix-like systems
+
 
         print(f"""{Fore.BLUE}
         # ... (rest of your UI code)

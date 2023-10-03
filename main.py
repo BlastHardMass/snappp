@@ -1,13 +1,17 @@
 import requests, os, re, threading
-import platform
+import os
 from colorama import Fore
 from lib.captcha import reCAPTCHA
 
 class SnapBrute:
     def ui(self):
-        clear_command = "clear" if platform.system() == "Linux" else "cls"
-        os.system(clear_command)
+        if platform.system() != "Windows":
+            os.system("clear")
+        else:
+            os.system("cls")
+
         print(f"""{Fore.BLUE}
+        # ... (rest of your UI code)
     \t\t\t  _________                   __________                __           
     \t\t\t /   _____/ ____ _____  ______\______   \_______ __ ___/  |_  ____   
     \t\t\t \_____  \ /    \\__  \ \____ \|    |  _/\_  __ \  |  \   __\/ __ \  

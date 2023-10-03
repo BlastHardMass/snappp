@@ -72,7 +72,7 @@ class SnapBrute:
         self.ui()
         for _ in range(100): #Threads
             try:
-                threading.Thread(target=self.bruter()).start()
+                threading.Thread(target=self.bruter).start()
             except Exception as err:
                 print(err)
 
